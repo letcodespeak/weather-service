@@ -17,7 +17,7 @@ Some improvements in todo list:
 - In ApiKeyService, instead of ArrayList, better to use queue FIFO data structure to store the timestamps to achieve O(n) time complexity, its O(n<sup>2</sup>) atm
 
 ## How to start
-Copy to local. In `weather` root folder, run `mvnw spring-boot:run` to start the application.
+Copy to local. In `weather-service` root folder, run `mvnw spring-boot:run` to start the application.
 
 ## H2 DB Access
 Access http://localhost:8088/restapi/h2-console/login.jsp with the info according to application-{env}.yml
@@ -27,7 +27,7 @@ JDBC URL: jdbc:h2:mem:weatherprod
 User Name: sa
 Password: password
 ```
-
+![H2 DB Login screenshot](https://github.com/letcodespeak/weather-service/blob/main/H2-login.jpg?raw=true)
 ## The RESTful services
 - http://localhost:8088/restapi/weather?country={country}&city={city}&apikey={apikey} HTTP Get # Load weather info for given country and city.
 ### apikey accepted as per application-{env}.yml
