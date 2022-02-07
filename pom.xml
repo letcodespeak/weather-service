@@ -8,7 +8,7 @@
 		<version>2.7.0-M1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.vanguard.interview</groupId>
+	<groupId>com.codespeaks.rest</groupId>
 	<artifactId>weather</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>weather</name>
