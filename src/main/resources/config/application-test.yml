@@ -1,0 +1,27 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:h2:mem:weathertest
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+
+open-weather-api:
+  address:
+    base: https://api.openweathermap.org
+    current-weather: /data/2.5/weather?lat={lat}&lon={lon}&appid={appid}
+    direct-geocoding: /geo/1.0/direct?q={city},{country}&appid={appid}
+  api-key: 93367987ec942df4f944a9d760d7a4fb
+
+api-key-service:
+  api-keys:
+    - key1
+    - key2
+    - key3
+    - key4
+  rate-per-hour: 5

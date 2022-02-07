@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: weather-service
+  profiles:
+    active: prod
+
+server:
+  port: 8088
+  servlet:
+    context-path: /restapi
