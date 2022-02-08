@@ -80,3 +80,11 @@ $  curl -s GET "http://localhost:8088/restapi/weather?country=GB&city=London&api
    "message" : "Maximum access rate hour limit reached, try later!"
 }
 ```
+### Internal Server Error in case downstream API call errors out
+```
+$  curl -s GET "http://localhost:8088/restapi/weather?country=GB&city=London&apikey=key2" | json_pp
+{
+"code" : 500,
+"message" : "Internal Server Error"
+}
+```
